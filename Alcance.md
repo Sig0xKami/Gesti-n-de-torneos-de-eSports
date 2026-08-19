@@ -1,1 +1,1 @@
-# Alcance funcional del proyecto
+# Alcance del proyecto
