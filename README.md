@@ -1,6 +1,5 @@
 # Gestion de torneos de Esports
-Gemini_Generated_Image_p10e2p10e2p10e2p.jpeg
-
+![Descripción de la imagen](IM.jpg)
 ## 👥 Integrantes del Grupo
 
 | Apellido y Nombre | Rol / Tareas | Contacto / Legajo |
