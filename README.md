@@ -1,5 +1,5 @@
 # Gestion de torneos de Esports
-![Descripción de la imagen](IM.jpg)
+![Descripción de la imagen](IM.jpeg)
 ## 👥 Integrantes del Grupo
 
 | Apellido y Nombre | Rol / Tareas | Contacto / Legajo |
