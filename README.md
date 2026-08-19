@@ -1,5 +1,5 @@
 # Gestion de torneos de Esports
-![Uploading Gemini_Generated_Image_p10e2p10e2p10e2p.jpeg…]()
+Gemini_Generated_Image_p10e2p10e2p10e2p.jpeg
 
 ## 👥 Integrantes del Grupo
 
