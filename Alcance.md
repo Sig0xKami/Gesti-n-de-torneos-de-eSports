@@ -1,4 +1,4 @@
-# Alcance del proyecto
+# Alcance del proyecto(Funcional)
 
 ## Dominio
 
@@ -7,3 +7,6 @@
 ## porcentajes,promedios,máximos,etc
 
 ## Procesamiento 
+
+# Tecnico
+## Estructura de datos
