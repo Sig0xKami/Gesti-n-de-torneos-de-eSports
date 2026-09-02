@@ -2,5 +2,4 @@
 
 
 
-
-[text](5.py) [text](7.html) [text](7.ipynb) [text](7.py) [text](8.ipynb) [text](ejercicio6.html) [text](ejercicio6.ipynb) [text](ejercicio6.py)
+ [Ejer 5 ](5.py)  [ejer 6. ](ejercicio6.ipynb)  [Ejer 7 ](7.ipynb)  [Ejer 8](8.ipynb) 
