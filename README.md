@@ -8,7 +8,7 @@
 | :--- | :--- | :--- |
 | **Maximo Javier, Arce** | ROL | [GitHub](https://github.com/Sig0xKami) • Legajo: 1240959 |
 | **Leandro, Hernandez** | ROL | [GitHub](https://github.com/o4todox) • Legajo: 1236476 |
-| **Uriel, Aguilera Martinez* | ROL| [GitHub](https://github.com/Uriel-67) • Legajo: 1231412 |
+| **Uriel, Aguilera Martinez** | ROL| [GitHub](https://github.com/Uriel-67) • Legajo: 1231412 |
 
 ## Alcance del proyecto(Funcional)
 
@@ -20,7 +20,7 @@ Simulación de partidas competitivas de Counter-Strike en formato reducido MR5, 
 
 Lista de jugadores identificados por su ID posicional, matriz de juego con sus métricas de Kills, Deaths, Assists, Dinero, Kills por Ronda y MVPs, y la economía con sus saldos individuales, costos de compra y premios por ronda o bajas.
 
-## porcentajes,promedios,máximos,etc
+## Porcentajes, promedios, máximos
 
 Porcentajes de probabilidad de victoria según el equipamiento (20%, 35%, 50% u 80%), saldo promedio del equipo para evaluar estabilidad o quiebra, determinación del jugador con más bajas como mejor jugador (Top Fragger) y límite monetario permitido de $12000.
 
