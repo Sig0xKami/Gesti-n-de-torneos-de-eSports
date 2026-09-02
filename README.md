@@ -1,6 +1,6 @@
 # Gestion de torneos de Esports
 
-![Descripción de la imagen](IM.jpeg)
+![Descripción de la imagen](img.jpeg)
 
 ## 👥 Integrantes del Grupo
 
