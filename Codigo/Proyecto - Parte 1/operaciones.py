@@ -91,8 +91,9 @@ def simularRonda(matrizStats):
         if not victoria:
             matrizStats[i][datos.colDeaths] = matrizStats[i][datos.colDeaths] + 1
 
-        ganancia = premioRonda + (killsRonda[i] * datos.configEconomia[2])
-        nuevoSaldo = matrizStats[i][datos.colDinero] + ganancia
+        # Calculo dinero nuevo: base $800 + bonus por kills de ronda anterior
+        nuevoSaldo = datos.configEconomia[6] + (datos.configEconomia[2] * killsRonda[i])
+
         if nuevoSaldo > datos.configEconomia[5]:
             matrizStats[i][datos.colDinero] = datos.configEconomia[5]
         else:

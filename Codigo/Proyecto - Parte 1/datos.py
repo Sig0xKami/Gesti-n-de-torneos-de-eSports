@@ -1,5 +1,10 @@
 # Tupla con las reglas economicas de la partida
-configEconomia = (2500, 1200, 300, 2000, 1000, 8000, 800)
+
+configEconomia = (600, 400, 50, 200, 0, 1500, 800)
+#                 600  400  50  200  0  1500  800
+
+
+
 
 colKills = 0
 colDeaths = 1
