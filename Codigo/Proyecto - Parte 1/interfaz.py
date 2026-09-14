@@ -3,15 +3,15 @@ import operaciones
 
 
 def mostrarMenuCuadro():
-    """Muestra el menu principal de opciones en la terminal."""
     print("+--------------------------------------------------------------+")
     print("|                SISTEMA DE TORNEOS DE ESPORTS                 |")
     print("+--------------------------------------------------------------+")
-    print("| 1. Simular Torneo Completo (4 Equipos: Semis y Final)        |")
-    print("| 2. Consultar Metricas de un Jugador por ID                   |")
-    print("| 3. Ver Historial de Matrices por Partida                     |")
-    print("| 4. Informes Generales y Ranking Global                       |")
-    print("| 5. Salir del Programa                                        |")
+    print("| 1. Crear Torneo                                              |")
+    print("| 2. Listar Torneos                                            |")
+    print("| 3. Ejecutar Torneo                                           |")
+    print("| 4. Ver Resultados                                            |")
+    print("| 5. Simular Rápido (Testing)                                  |")
+    print("| 6. Salir del Programa                                        |")
     print("+--------------------------------------------------------------+")
 
 
