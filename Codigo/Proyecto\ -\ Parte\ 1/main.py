@@ -1,17 +1,17 @@
 import datos
-import interfaz
 import torneo
+import interfaz
 
 
 def main():
-    # Lista para guardar torneos
+    #Lista para guardar torneos
     torneos_creados = []
     listaEquipos = ["Luminosity", "Fnatic", "Navi", "Astralis"]
     matrizPlanteles = [
         ["Coldzera", "FalleN", "Fer", "Taco", "Fnx"],
         ["Olofmeister", "Flusha", "JW", "Krimz", "Dennis"],
         ["Simple", "Flamie", "Edward", "Zeus", "Guardian"],
-        ["Device", "Dupreeh", "Xyp9x", "Kjaerbye", "Gla1ve"],
+        ["Device", "Dupreeh", "Xyp9x", "Kjaerbye", "Gla1ve"]
     ]
 
     miEquipo = matrizPlanteles[0]
@@ -20,7 +20,7 @@ def main():
     nombresPartidas = [
         f"Semifinal 1 ({listaEquipos[0]} vs {listaEquipos[1]})",
         f"Semifinal 2 ({listaEquipos[2]} vs {listaEquipos[3]})",
-        f"Gran Final",
+        f"Gran Final"
     ]
     torneoJugado = False
 
@@ -34,6 +34,7 @@ def main():
             opcion = int(entrada)
         except ValueError:
             opcion = 0
+
 
         if opcion == 1:
             nombre_torneo = input("Nombre del torneo: ")
@@ -50,13 +51,9 @@ def main():
                 for j in range(5):
                     nombre_jug = input(f"  Jugador {j+1}: ")
                     jugadores.append(nombre_jug)
-                equipos_input.append(
-                    {"nombre": nombre_eq, "jugadores": jugadores}
-                )
+                equipos_input.append({"nombre": nombre_eq, "jugadores": jugadores})
 
-            torneos_creados.append(
-                {"nombre": nombre_torneo, "equipos": equipos_input}
-            )
+            torneos_creados.append({"nombre": nombre_torneo, "equipos": equipos_input})
             print(f"✓ Torneo '{nombre_torneo}' creado\n")
 
         elif opcion == 2:
@@ -76,7 +73,16 @@ def main():
                 for i in range(len(torneos_creados)):
                     print(f"{i+1}. {torneos_creados[i]['nombre']}")
 
-                idx = int(input("Seleccione torneo (número): ")) - 1
+                try:
+                    idx = int(input("Seleccione torneo (número): ")) - 1
+                except ValueError:
+                    print("Error: Debe ingresar un número\n")
+                    continue
+
+                if idx < 0 or idx >= len(torneos_creados):
+                    print("Error: Torneo no válido\n")
+                    continue
+
                 torneo_sel = torneos_creados[idx]
 
                 matriz_torneo = datos.crearMatrizGeneral(5)
@@ -84,15 +90,8 @@ def main():
                 equipos_torneo = [e["nombre"] for e in torneo_sel["equipos"]]
 
                 print(f"\nEjecutando: {torneo_sel['nombre']}")
-                torneo.ejecutarTorneoCompleto(
-                    equipos_torneo,
-                    [e["jugadores"] for e in torneo_sel["equipos"]],
-                    matriz_torneo,
-                    historial,
-                )
-                interfaz.mostrarReportesGlobales(
-                    matriz_torneo, torneo_sel["equipos"][0]["jugadores"]
-                )
+                torneo.ejecutarTorneoCompleto(equipos_torneo, [e["jugadores"] for e in torneo_sel["equipos"]], matriz_torneo, historial)
+                interfaz.mostrarReportesGlobales(matriz_torneo, torneo_sel["equipos"][0]["jugadores"])
 
         elif opcion == 4:
             if not torneos_creados:
@@ -107,20 +106,13 @@ def main():
                 ["J1", "J2", "J3", "J4", "J5"],
                 ["J6", "J7", "J8", "J9", "J10"],
                 ["J11", "J12", "J13", "J14", "J15"],
-                ["J16", "J17", "J18", "J19", "J20"],
+                ["J16", "J17", "J18", "J19", "J20"]
             ]
             matrizGeneralTorneo = datos.crearMatrizGeneral(5)
             historialPartidas = []
 
-            torneo.ejecutarTorneoCompleto(
-                listaEquipos,
-                matrizPlanteles,
-                matrizGeneralTorneo,
-                historialPartidas,
-            )
-            interfaz.mostrarReportesGlobales(
-                matrizGeneralTorneo, matrizPlanteles[0]
-            )
+            torneo.ejecutarTorneoCompleto(listaEquipos, matrizPlanteles, matrizGeneralTorneo, historialPartidas)
+            interfaz.mostrarReportesGlobales(matrizGeneralTorneo, matrizPlanteles[0])
             print("✓ Simulación completada\n")
 
         elif opcion == 6:
