@@ -10,11 +10,11 @@ Lista de jugadores identificados por su ID posicional, matriz de juego con sus m
 
 ## porcentajes,promedios,máximos,etc
 
-Porcentajes de probabilidad de victoria según el equipamiento (20%, 35%, 50% u 80%), saldo promedio del equipo para evaluar estabilidad o quiebra, determinación del jugador con más bajas como mejor jugador (Top Fragger) y límite monetario permitido de $12000.
+Porcentajes de probabilidad de victoria según el equipamiento (20%, 35%, 50% u 80%), saldo promedio del equipo para evaluar estabilidad o quiebra, determinación del jugador con más bajas como mejor jugador (Top Fragger) y límite monetario permitido de $1500.
 
 ## Procesamiento
 
-Inicialización de la matriz con el saldo de ronda pistol de $800, validación y descuento de compras sin generar saldo negativo, generación aleatoria de 5 bajas por ronda con liquidación de premios (+$300 kill, +$3250 victoria, +$1400 derrota) y generación de 5 informes consolidados de rendimiento. Al acabar las 5 rondas los jugadores pierden el dinero acumulado. 
+Inicialización de la matriz con el saldo de ronda pistol de $800, validación y descuento de compras sin generar saldo negativo, generación aleatoria de kills por ronda con liquidación de premios (+$50 por kill) y generación de 5 informes consolidados de rendimiento. El dinero base de cada ronda es $800 más el bonus de $50 por cada kill, con tope máximo de $1500.
 
 # Tecnico
 > **¡Atención!** Límite de la etapa: No se exige persistencia. Al cerrar el programa, los datos pueden perderse. Archivos diccionarios y conjuntos se incorporarán en la segunda iteración.
@@ -31,7 +31,7 @@ Matriz matrizStats como una estructura homogénea de 5x6 enteros con las métric
 
 ## Tupla
 
-Estructura constante CONFIG_ECONOMIA que almacena los precios, las recompensas y los topes financieros.
+Estructura constante CONFIG_ECONOMIA que almacena los precios, las recompensas y los topes financieros (600, 400, 50, 200, 0, 1500, 800).
 
 ## Cadena
 
